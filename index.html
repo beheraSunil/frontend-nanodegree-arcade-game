@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Effective JavaScript: Frogger</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <script src="js/jQuery.js"></script>
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
+    <h1>Classic Frogger Game</h1>
+    <div id=playButton>
+        <button id="play" class="button">Play</button>
+    </div>
+    <div>
+        <!-- TODO -->
+        <!-- Enable the user to select their avatar(character) -->
+        <h2>Your avatar :</h2>
+        <ul>
+            <li><button id="char-boy"><img src="images/char-boy.png"/></button></li>
+            <li><img src="images/char-cat-girl.png" /></li>
+            <li><img src="images/char-horn-girl.png" /></li>
+            <li><img src="images/char-pink-girl.png" /></li>
+            <li><img src="images/char-princess-girl.png" /></li>
+        </ul>
+    </div>
+    <div id="scoreCard">
+
+    </div>
 </body>
+<script type="text/javascript">
+    $("#play").click(function() {
+        $('#c').css('display', 'block');
+        $('#playButton').remove();
+        // $('#playButton').css('display','none');
+        score = 0;
+    });
+</script>
+
 </html>
